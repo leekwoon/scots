@@ -1,0 +1,5 @@
+env_name: "pointmaze-large-stitch-v0"
+horizon: 26
+hilp_gamma: 0.99
+max_episode_steps: 1001
+distance_threshold: 2.0

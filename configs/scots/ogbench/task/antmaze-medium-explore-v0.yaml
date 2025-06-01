@@ -1,0 +1,8 @@
+env_name: "antmaze-medium-explore-v0"
+horizons: [41, 26]
+
+low_controller: gciql
+goal_tol: 1.0
+replan_every: 50
+low_horizon: 10
+w_ldg: 0 

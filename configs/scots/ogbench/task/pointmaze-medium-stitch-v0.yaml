@@ -1,0 +1,8 @@
+env_name: "pointmaze-medium-stitch-v0"
+horizons: [21, 26]
+
+low_controller: gciql
+goal_tol: 1.0
+replan_every: 50
+low_horizon: 10 
+w_ldg: 0 

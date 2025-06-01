@@ -1,0 +1,24 @@
+defaults:
+  - _self_
+  - task: pointmaze-large-stitch-v0
+  - override hydra/job_logging: disabled
+  - override hydra/hydra_logging: disabled
+
+group: debug
+
+pipeline_name: invdyn_ogbench
+mode: train
+seed: 0
+device: cuda:0
+
+# Training
+invdyn_gradient_steps: 200000
+batch_size: 64
+log_interval: 1000
+save_interval: 100000
+
+# hydra
+hydra:
+  run:
+    dir: .         
+  output_subdir: null   

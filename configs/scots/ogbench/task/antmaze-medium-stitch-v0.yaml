@@ -1,0 +1,8 @@
+env_name: "antmaze-medium-stitch-v0"
+horizons: [21, 26]
+
+low_controller: crl
+goal_tol: 3.0
+replan_every: 50
+low_horizon: 5
+w_ldg: 0 
