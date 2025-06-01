@@ -8,13 +8,6 @@ Diffusion-based generative models are emerging as powerful tools for long-horizo
     <img src="assets/figure3.png" width=99%>
 </p>
 
-## Table of Contents
-
--   [Installation](#installation)
--   [Running Experiments](#running-experiments)
-    -   [Diffusion Planning with SCoTS-Augmented Data](#diffusion-planning-with-scots-augmented-data-sec-43)
-    -   [Offline GCRL with SCoTS-Augmented Data](#offline-gcrl-with-scots-augmented-data-sec-44)
-
 ---
 
 ## Installation
