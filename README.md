@@ -10,17 +10,24 @@ Diffusion-based generative models are emerging as powerful tools for long-horizo
 
 ---
 
+## Table of Contents
+
+-   [Installation](#installation)
+-   [Running Experiments](#running-experiments)
+    -   [Diffusion Planning with SCoTS-Augmented Data](#diffusion-planning-with-scots-augmented-data)
+    -   [Offline GCRL with SCoTS-Augmented Data](#offline-gcrl-with-scots-augmented-data)
+
+---
+
 ## Installation
 
-1.  **Create and activate a Conda environment:**
-    We recommend using Python 3.9.
+1.  **Create and activate a Conda environment**:
     ```bash
     conda create -n scots python=3.9
     conda activate scots
     ```
 
-2.  **Install project dependencies:**
-    This command installs the current project in editable mode and then installs dependencies from `requirements.txt`. Ensure `requirements.txt` is comprehensive.
+2.  **Install project dependencies**:
     ```bash
     pip install -e .
     pip install -r requirements.txt
@@ -32,7 +39,7 @@ Diffusion-based generative models are emerging as powerful tools for long-horizo
 
 This section details how to reproduce the main experimental results presented in the paper.
 
-### Diffusion Planning with SCoTS-Augmented Data (Sec 4.3)
+### Diffusion Planning with SCoTS-Augmented Data
 
 This involves a pipeline of training several components:
 *All scripts are assumed to be run from the root directory of this repository.*
@@ -86,7 +93,7 @@ This involves a pipeline of training several components:
 
 ---
 
-### Offline GCRL with SCoTS-Augmented Data (Sec 4.4)
+### Offline GCRL with SCoTS-Augmented Data
 
 This section explains how to evaluate standard offline Goal-Conditioned Reinforcement Learning (GCRL) algorithms using datasets augmented by SCoTS.
 
@@ -105,7 +112,7 @@ To obtain the baseline performance of GCRL algorithms on the original (non-augme
 To train and evaluate GCRL algorithms on SCoTS-augmented data:
 
 1.  **Prepare Augmented Data:**
-    * After running Step 3 from the [Diffusion Planning with SCoTS-Augmented Data (Sec 4.3)](#diffusion-planning-with-scots-augmented-data-sec-43) section (i.e., `bash scripts/stitcher.sh`), your SCoTS-augmented data files (e.g., `{env_name}_augmented.npz` and `{env_name}_augmented-val.npz`) will be available, typically in a path like `results/stitcher_ogbench_H26/{env_name}/` within this (SCoTS) repository.
+    * After running Step 3 from the [Diffusion Planning with SCoTS-Augmented Data](#diffusion-planning-with-scots-augmented-data) section (i.e., `bash scripts/stitcher.sh`), your SCoTS-augmented data files (e.g., `{env_name}_augmented.npz` and `{env_name}_augmented-val.npz`) will be available, typically in a path like `results/stitcher_ogbench_H26/{env_name}/` within this (SCoTS) repository.
     * Navigate to the `impls` directory of your cloned OGBench repository (from step A.1 above).
     * Create a subdirectory for the augmented data:
         ```bash
